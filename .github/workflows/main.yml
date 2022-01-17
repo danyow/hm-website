@@ -27,6 +27,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           source: "./build/*"
           target: "/www/wwwroot/www.halfmillion.cn"
+          strip_components: 1
 
       # 目前较为流行部署到GitHubPages 的Action：
       # 文档: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
